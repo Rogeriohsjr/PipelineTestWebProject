@@ -43,7 +43,7 @@ steps:
   inputs:
     searchFolderForTestFiles: '$(System.DefaultWorkingDirectory)'
     vsTestExeFileLocation: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe'
-    vsTestArgs: '/EnableCodeCoverage /TestAdapterPath:"$(Build.SourcesDirectory)"'
+    vsTestArgs: '/EnableCodeCoverage'
     listTestFiles: '**\bin\**\*.Tests*.dll'
     searchFolderForCodeCoverageFile: '$(System.DefaultWorkingDirectory)'
     temporaryFolderForCodeCoverage: 'Agent.TempDirectory'
